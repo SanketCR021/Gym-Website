@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.margin-right {
+  margin-right: 2rem;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
+
+.orangeText {
+  color: #f99137;
+}
+
+.underline::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 2px;
+  margin: auto;
+  background-color: #f99137;
+}
+
+.heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.container {
+  max-width: clamp(50rem, 85vw, 114rem);
+  padding: 0 2.4rem;
+  margin: 0 auto;
+}
+
+section:nth-child(odd) {
+  background-color: #332828;
+}
+
+section:nth-child(even) {
+  background-color: #291d1d;
+}
+
+/* ////////// navigation bar /////////// */
+
+.header {
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(0deg, #332828f5 54%, rgba(41,29,29,0.8) 100%);
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+
+.navBar ul {
+  display: flex;
+  font-size: 1.7rem;
+  list-style: none;
+  font-weight: 700;
+}
+
+.navBar ul li {
+  padding-left: 2.8rem;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1.8rem 0;
+}
+
+.navBar ul li a:hover {
+  color: #cd5f4e;
+}
+
+.navBar .logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* ////// hiro-section //// */
+.section-hiro {
+  background: url("/images/eqipments.jpg");
+  background-size: cover;
+  background-position: top;
+  height: max(100vh, 60rem);
+}
+
+.hiro-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  letter-spacing: 0.1rem;
+}
+
+.hiro-box .description {
+  font-size: 1.7rem;
+}
+
+.btn {
+  padding: 1rem clamp(1.2rem, 3vw, 3rem);
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #f99137;
+  color: #dfdfdf;
+  border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+  background-color: #ab5e1b;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #f99137;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #e9a86f;
+  border: 1px solid #d48846;
+  color: #e31332;
+}
+
+/* //////// about section ////// */
+
+.about-section {
+  padding: 9rem 8rem 11rem 8rem;
+}
+
+.link-button {
+  text-decoration: none;
+  padding: 0.4rem 0;
+  color: #fff;
+  border-bottom: 2px solid #f99137;
+}
+
+.link-button:hover {
+  font-style: italic;
+}
+
+.heading-about {
+  font-weight: 600;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.about-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section-content {
+  margin-right: 5rem;
+}
+
+.about-section-image img {
+  height: 40vh;
+}
+
+/* ////////  courses offered  /////////// */
+
+.courses-section {
+  padding: clamp(4rem, 10vw, 12rem) 0rem;
+}
+
+.courses-box .courses-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  max-height: 100%;
+}
+
+.courses-box .courses-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.courses-box .courses-content .class-card {
+  position: relative;
+  height: 50vh;
+  width: 50vh;
+}
+
+.class-card .course-1{
+  background: url("/images/strengthtrain.jpg") no-repeat top center/cover;
+  height: 88%;
+  position: relative;
+  bottom: -47px;
+}
+.class-card .course-2{
+  background: url("/images/coreStr.webp") no-repeat top center/cover;
+  height: 88%;
+  position: relative;
+  bottom: -47px;
+}
+.class-card .course-3{
+  background: url("/images/cardio.webp") no-repeat top center/cover;
+  height: 88%;
+  position: relative;
+  bottom: -47px;
+}
+.class-card .course-4{
+  background: url("/images/fitness.jpg") no-repeat top center/cover;
+  height: 88%;
+  position: relative;
+  bottom: -47px;
+}
+.class-card .course-5{
+  background: url("/images/workshop.webp") no-repeat left center/cover;
+  height: 88%;
+  position: relative;
+  bottom: -47px;
+}
+.class-card .course-6{
+  background: url("/images/nutrional.jpg") no-repeat top left/cover;
+  height: 88%;
+  position: relative;
+  bottom: -47px;
+}
+
+.courses-box .courses-content .class-card-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+
+  background: #af5608;
+  font-weight: 700;
+  color: #f0d5c8;
+}
+
+/* ///////// coaches section ////////// */
+
+.coaches-section {
+  padding: clamp(4rem, 10vw, 12rem) 0rem;
+}
+
+.coaches-box .coache-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  max-height: 100%;
+}
+
+.coaches-box .coache-content {
+  display: flex;
+  gap: 3rem;
+}
+
+.coaches-box .coache-content .c-card {
+  width: 33.33%;
+  height: 50vh;
+  position: relative;
+}
+
+.coach-1{
+  background: url("/images/goku.jpg") no-repeat top/cover;
+}
+.coach-2{
+ background: url("/images/gojo.jpg")  no-repeat top/cover;
+}
+.coach-3{
+  background: url("/images/zoro.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.coaches-box .coache-content .c-card-content {
+  position: absolute;
+  bottom: 0;
+  background: #ac601d;
+  color: #c8c0bd;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+  width: 71%;
+  padding: 0.5rem 1rem;
+}
+
+.coaches-box .coache-content .c-card-content .c-name {
+  color: #b60c0f;
+  font-weight: 700;
+}
+
+.coaches-box .coache-content .c-card:hover .c-card-img {
+  filter: brightness(0.8);
+}
+
+/* /////// review section ////// */
+
+.review-section {
+  padding: clamp(4rem, 10vw, 12rem) 0rem;
+}
+
+.review-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.review-card-container {
+  margin-top: 5rem;
+  display: flex;
+  gap: 5rem;
+}
+
+.review-card {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-card-image {
+  height: 20vh;
+  width: 20vh;
+  border-radius: 50%;
+  /* background-color: aqua; */
+}
+
+.reviewer-1{
+  background: url("/images/eren.jpeg") ;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.reviewer-2{
+  background: url("/images/naruto.jpg") no-repeat top/cover;
+}
+.reviewer-3{
+  background: url("/images/tanjiro.jpg") no-repeat right/cover;
+}
+
+.review-card-content {
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.review-card-content .text {
+  font-style: italic;
+}
+
+.review-card-content .name {
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding-top: 1.5rem;
+}
+
+.review-card-content::before {
+  content: '\201F';
+  display: block;
+  font-size: 12rem;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: -7rem;
+  left: -1rem;
+}
+
+/* //////// contact section ////// */
+
+.contact-section {
+  padding: 0.8rem clamp(1rem, 3vw, 3rem);
+}
+
+.form-grp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+  padding: 4rem 2.4rem;
+}
+
+.form-input {
+  padding: 0.8rem clamp(1rem, 3vw, 3rem);
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  width: 70%;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ///////// footer section ///////// */
+
+.footer-section {
+  background-color:hsl(0deg 30.85% 11.79%);
+  padding: 7rem 0;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-details .contact-data {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-details .contact-data * {
+  padding: 0.4rem 0;
+}
+
+.social {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.social :nth-child(1):hover {
+  color: rgb(2, 160, 31);
+}
+
+.social :nth-child(2):hover {
+  color: rgb(239, 15, 172);
+}
+
+.social :nth-child(3):hover {
+  color: rgb(38, 105, 176);
+}
+
+.social :nth-child(4):hover {
+  color: rgb(0, 0, 0);
+}
+
+.contact-details .contact-data .social * {
+  padding-right: 1.7rem;
+}
+
+.footer-navigation .nav-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.footer-navigation ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-navigation ul li {
+  list-style: none;
+  padding: 1.5rem 0;
+}
+
+.footer-navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-navigation ul li a:hover {
+  font-style: italic; 
+}
+
+.news {
+  width: 25em;
+}
+
+.news-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.news-text {
+  margin-bottom: 1.6rem;
+}
+
+.news-input {
+  display: flex;
+}
+
+.news-input input {
+  padding: 0.5rem 1.3rem;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  color: #474646;
+  margin-right: 1rem;
+}
+
+.news-input button {
+  padding: 0.5rem 1.3rem;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 600;
+  color: #201111;
+  background-color: #f99137;
+  border: none;
+}
+
+.author {
+  margin-top: 5.5em;
+  border-top: 2px solid #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.author .text {
+  padding: 1rem 0;
+}
+
+.author a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.author :nth-child(2):hover {
+  color: rgb(98, 99, 98);
+}
+
+.author :nth-child(3):hover {
+  color: rgb(39, 122, 230);
+}
