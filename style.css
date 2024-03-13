@@ -108,7 +108,7 @@ section:nth-child(even) {
 
 /* ////// hiro-section //// */
 .section-hiro {
-  background: url("/images/eqipments.jpg");
+  background: url("images/eqipments.jpg");
   background-size: cover;
   background-position: top;
   height: max(100vh, 60rem);
@@ -228,37 +228,37 @@ section:nth-child(even) {
 }
 
 .class-card .course-1{
-  background: url("/images/strengthtrain.jpg") no-repeat top center/cover;
+  background: url("images/strengthtrain.jpg") no-repeat top center/cover;
   height: 88%;
   position: relative;
   bottom: -47px;
 }
 .class-card .course-2{
-  background: url("/images/coreStr.webp") no-repeat top center/cover;
+  background: url("images/coreStr.webp") no-repeat top center/cover;
   height: 88%;
   position: relative;
   bottom: -47px;
 }
 .class-card .course-3{
-  background: url("/images/cardio.webp") no-repeat top center/cover;
+  background: url("images/cardio.webp") no-repeat top center/cover;
   height: 88%;
   position: relative;
   bottom: -47px;
 }
 .class-card .course-4{
-  background: url("/images/fitness.jpg") no-repeat top center/cover;
+  background: url("images/fitness.jpg") no-repeat top center/cover;
   height: 88%;
   position: relative;
   bottom: -47px;
 }
 .class-card .course-5{
-  background: url("/images/workshop.webp") no-repeat left center/cover;
+  background: url("images/workshop.webp") no-repeat left center/cover;
   height: 88%;
   position: relative;
   bottom: -47px;
 }
 .class-card .course-6{
-  background: url("/images/nutrional.jpg") no-repeat top left/cover;
+  background: url("images/nutrional.jpg") no-repeat top left/cover;
   height: 88%;
   position: relative;
   bottom: -47px;
@@ -305,13 +305,13 @@ section:nth-child(even) {
 }
 
 .coach-1{
-  background: url("/images/goku.jpg") no-repeat top/cover;
+  background: url("images/goku.jpg") no-repeat top/cover;
 }
 .coach-2{
- background: url("/images/gojo.jpg")  no-repeat top/cover;
+ background: url("images/gojo.jpg")  no-repeat top/cover;
 }
 .coach-3{
-  background: url("/images/zoro.png");
+  background: url("images/zoro.png");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -371,16 +371,16 @@ section:nth-child(even) {
 }
 
 .reviewer-1{
-  background: url("/images/eren.jpeg") ;
+  background: url("images/eren.jpeg") ;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .reviewer-2{
-  background: url("/images/naruto.jpg") no-repeat top/cover;
+  background: url("images/naruto.jpg") no-repeat top/cover;
 }
 .reviewer-3{
-  background: url("/images/tanjiro.jpg") no-repeat right/cover;
+  background: url("images/tanjiro.jpg") no-repeat right/cover;
 }
 
 .review-card-content {
